@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<style>
+
+    body {
+    background-image:url('https://wallpapercave.com/wp/PO6cjaY.jpg');
+    background-repeat:repeat-y;
+    background-color: red;
+    }
+
+    textarea {
+        align: center;
+
+    }
+
+    form {
+        margin: 0 auto;
+        width:550px;
+    }
+</style>
+
+
+<link rel="stylesheet" type="text/css" href="src/java/webapp/css/style.css"/>
+<body>
+
+
+
+
+<script>
+    function auto_grow(element) {
+        element.style.height = "5px";
+        element.style.height = (element.scrollHeight)+"px";
+    }
+</script>
+
+
+<form  action="/results">
+    <textarea oninput="auto_grow(this)" id="confirmationText"  cols="86" rows ="10" name="text"></textarea>
+
+    <input type="submit" value="Enviar datos" class="submitButton">
+</form>
+
+</body>
+</html>
