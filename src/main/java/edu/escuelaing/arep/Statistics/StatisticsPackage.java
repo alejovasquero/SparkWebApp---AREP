@@ -68,6 +68,7 @@ public class StatisticsPackage {
         }
     }
 
+    /*
     public static void main(String args[]){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Especifique el nombre o ruta del archivo:  ");
@@ -79,4 +80,6 @@ public class StatisticsPackage {
         System.out.printf("Promedio:   %.2f\n",calculateMean(col));
         System.out.printf("Desviacion estandar:   %.2f\n", calculateDeviation(col));
     }
+
+     */
 }
