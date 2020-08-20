@@ -21,7 +21,7 @@ public class HTMLHandler {
 
     public void replace(String bef, String aft){
         if(data!=null){
-            data.replaceAll(bef, aft);
+            data = data.replaceAll(bef, aft);
         }
     }
 
