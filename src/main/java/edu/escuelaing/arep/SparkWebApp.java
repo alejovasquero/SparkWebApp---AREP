@@ -23,7 +23,7 @@ public class SparkWebApp {
         StringBuilder contentBuilder = new StringBuilder();
         System.out.println(System.getProperty("user.dir"));
         try {
-            BufferedReader in = new BufferedReader(new FileReader("src\\main\\webapp\\data.html"));
+            BufferedReader in = new BufferedReader(new FileReader("src/main/webapp/data.html"));
             String str;
             while ((str = in.readLine()) != null) {
                 contentBuilder.append(str);
