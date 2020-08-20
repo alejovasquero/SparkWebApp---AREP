@@ -42,7 +42,7 @@ public class HTMLHandler {
             }
             in.close();
         } catch (IOException e) {
-            // :(
+            e.printStackTrace();
         }
         String content = contentBuilder.toString();
         return content;

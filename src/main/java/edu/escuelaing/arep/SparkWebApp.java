@@ -30,7 +30,7 @@ public class SparkWebApp {
                 //:(
             }
         }
-        HTMLHandler handler = new HTMLHandler("src/main/webapp/data.html");
+        HTMLHandler handler = new HTMLHandler("src/main/webapp/result.html");
         handler.replace("mean", Double.toString(StatisticsPackage.calculateMean(l)));
         handler.replace("deviation", Double.toString(StatisticsPackage.calculateDeviation(l)));
         return handler.getData();
