@@ -19,7 +19,7 @@ public class SparkWebApp {
         return "Hello";
     }
 
-    public static String inputDataPage(Request req, Response res){
+    public static String inputDataPage(Request req, Response res) throws Exception {
         StringBuilder contentBuilder = new StringBuilder();
         System.out.println(System.getProperty("user.dir"));
         try {
@@ -30,7 +30,7 @@ public class SparkWebApp {
             }
             in.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new Exception(System.getProperty("user.dir"));
         }
         String content = contentBuilder.toString();
         return content;
