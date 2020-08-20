@@ -38,8 +38,7 @@ public class SparkWebApp {
 
     public static String inputDataPage(Request req, Response res) throws Exception {
         HTMLHandler handler = new HTMLHandler("src/main/webapp/data.html");
-        return "Hello";
-        //return handler.getData();
+        return handler.getData();
 	}
 
 

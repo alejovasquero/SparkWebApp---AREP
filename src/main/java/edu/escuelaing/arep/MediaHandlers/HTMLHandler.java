@@ -45,6 +45,7 @@ public class HTMLHandler {
             e.printStackTrace();
         }
         String content = contentBuilder.toString();
+        opened = true;
         return content;
     }
 
