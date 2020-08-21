@@ -51,17 +51,17 @@ Una vez compiladas las clases vamos a correr el proyecto
 mvn exec:java -Dexec.mainClass="edu.escuelaing.arep.SparkWebApp"
 ```
 
-Ahora vamos a entrar a nuestro browser en [localhost:4567/data](localhost:4567/data)
+Ahora vamos a entrar a nuestro browser en [localhost:4567/hello](localhost:4567/hello)
 
 ## Spark HEROKU
 
-Si queremos hacer uso de la aplicación desde heroku entramos al siguiente [link](https://ancient-dusk-94293.herokuapp.com/data)
+Si queremos hacer uso de la aplicación desde heroku entramos al siguiente [link](https://ancient-dusk-94293.herokuapp.com/hello)
 
 
 ## USO de la aplicación
 
 Vamos a insertar una lista de datos válidos y recibir el resultado:
-Una vez en la página /data, vamos a insertar la lista de datos para cálcular.
+Una vez en la página /hello, vamos a insertar la lista de datos para cálcular.
 
 ![](resources/data.PNG)
 

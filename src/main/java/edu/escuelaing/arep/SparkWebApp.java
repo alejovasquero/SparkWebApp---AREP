@@ -15,7 +15,7 @@ public class SparkWebApp {
 
     public static void main(String[] args) {
         port(getPort());
-        get("/data", (req, res) -> inputDataPage(req, res));
+        get("/hello", (req, res) -> inputDataPage(req, res));
         get("/results", (req, res) -> resultsPage(req, res));
     }
 
