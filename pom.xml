@@ -14,6 +14,7 @@
   </properties>
 
   <!-- build configuration -->
+
   <build>
     <plugins>
       <plugin>
@@ -23,6 +24,7 @@
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
+          <compilerArgument>-XDignore.symbol.file</compilerArgument>
         </configuration>
       </plugin>
       <plugin>
