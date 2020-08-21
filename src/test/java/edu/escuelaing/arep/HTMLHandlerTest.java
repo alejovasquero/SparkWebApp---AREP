@@ -2,14 +2,12 @@ package edu.escuelaing.arep;
 
 import edu.escuelaing.arep.MediaHandlers.HTMLHandler;
 import edu.escuelaing.arep.collections.LinkedList;
-import javafx.print.Collation;
 import junit.framework.TestCase;
 
 
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
-import jdk.internal.jline.internal.TestAccessible;
 import org.junit.Test;
 
 import java.lang.reflect.Array;
