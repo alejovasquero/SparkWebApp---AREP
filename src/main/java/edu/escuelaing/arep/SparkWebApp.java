@@ -15,10 +15,17 @@ public class SparkWebApp {
 
     public static void main(String[] args) {
         port(getPort());
-        get("/hello", (req, res) -> inputDataPage(req, res));
+        get("/data", (req, res) -> inputDataPage(req, res));
         get("/results", (req, res) -> resultsPage(req, res));
     }
 
+    /**
+     * Retorna los datos de la página de resultados
+     * @param req Resquest de la petición
+     * @param res Respuesta de la petición
+     * @return Texto para la página
+     * @throws Exception
+     */
     private static String resultsPage(Request req, Response res) {
         String a = req.queryParams("text");
         String lines[] = a.split("\\r?\\n");
@@ -36,13 +43,23 @@ public class SparkWebApp {
         return handler.getData();
     }
 
+    /**
+     * Retorna los datos de la página de datos
+     * @param req Resquest de la petición
+     * @param res Respuesta de la petición
+     * @return Texto para la página
+     * @throws Exception
+     */
     public static String inputDataPage(Request req, Response res) throws Exception {
         HTMLHandler handler = new HTMLHandler("src/main/webapp/data.html");
         return handler.getData();
 	}
 
 
-
+    /**
+     * Cambia el puerto de respuesta, dependiendo del entorno de despliegue
+     * @return Puerto a trabajar
+     */
     static int getPort() {
         if (System.getenv("PORT") != null) {
             return Integer.parseInt(System.getenv("PORT"));
